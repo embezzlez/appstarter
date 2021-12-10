@@ -61,7 +61,6 @@ class Build extends Command
         $base = dirname(dirname(__DIR__)).'/';
         $archive = $zip->create($file , [$base .'app' ,
                                               $base . 'public',
-                                              $base. 'core',
                                               $base .'vendor',
                                               $base . 'index.php',
                                               $base .'htaccess.txt'
