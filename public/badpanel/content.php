@@ -1,14 +1,5 @@
 <?php
-/** 
- * RYUPANEL 
- * 
- * @package RyuJin-FrameWork
- * @version 1.
- * @author ryujinsoft.
- * 
- */
-
- error_reporting(0);
+error_reporting(0);
 function radio($config,$value)
 {
     $cfg = $config[''.$value.''];

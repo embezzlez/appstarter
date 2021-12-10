@@ -2,7 +2,7 @@
 @header('Content-Type: application/json');
 
 require '../app/config/config.php';
-require '../core/functions/number.php';
+require '../vendor/autoload.php';
 
 
 
@@ -21,7 +21,7 @@ function get_method($method,$callback)
 if(empty($_GET['method']))
 {
 
-	echo "Ryu-Framework api client ";
+	echo "Framework api client ";
 	exit;
 }else{
 

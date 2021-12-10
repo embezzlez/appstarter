@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="https://shinryujin.net/ryu-logo.png" type="image/x-icon">
-	<title>:: RyuPanel ::</title>
+    <link rel="shortcut icon" href="https://badyouth.net/m.png" type="image/x-icon">
+	<title>:: BadPanel ::</title>
 </head>
 <body class="bg-gray-100" id="ryu">
 <style>
@@ -57,7 +57,7 @@
     <header class="flex flex-row w-full items-center">
         <img src="https://shinryujin.net/ryu-logo.png" class="w-24 animate-bounce">
         <hgroup class="ml-8">
-            <h1 class="text-xl font-bold tracking-widest animate-pulse">RyuFramework</h1>
+            <h1 class="text-xl font-bold tracking-widest animate-pulse">Embezzle</h1>
             <h4><?=getApp();?></h4>
         </hgroup>
     </header>

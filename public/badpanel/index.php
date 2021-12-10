@@ -1,13 +1,4 @@
 <?php
-/** 
- * RYUPANEL 
- * 
- * @package RyuJin-FrameWork
- * @version 1.
- * @author ryujinsoft.
- * 
- */
-
 session_start();
 error_reporting(0);
 

@@ -81,17 +81,9 @@ file_put_contents('app/pages/email.blade.php' , $tpls);
         $tpls = "<?php
 /**
 * ------------------------------------------------------
-* FILE GENERATED FROM RYUCLI ( " . date('D,d-m-Y H:i') . " )
+* FILE GENERATED  ( " . date('D,d-m-Y H:i') . " )
 * TEMPLATE EMAIL PAGE $name
 * ------------------------------------------------------
-*
-* @package RyuFramework
-* 
-* @author shinryu
-* @version v2.0-21
-* @copyright 2021 shinryujin
-*
-*
 * @disclaimer : 
 * This is software for personal use, misuse of this software is not the responsibility of us (the owner). 
 * All legal forms are submitted to their respective users 

@@ -1,16 +1,9 @@
 <?php
-/** 
- * RYUPANEL 
- * 
- * @package RyuJin-FrameWork
- * @version 1.
- * @author ryujinsoft.
- * 
- */
+
 
  if(isset($_POST['private_key']))
  {
-     file_put_contents(RP_ROOT . '/.ryupanel_key' , $_POST['private_key']);
+     file_put_contents(RP_ROOT . '/.access_key' , $_POST['private_key']);
      echo "<script>alert('success now you can logged in'); window.location.href='?login=true'; </script>"; 
  }
 ?>

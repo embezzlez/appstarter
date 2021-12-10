@@ -1,16 +1,3 @@
-<?php
-/** 
- * RYUPANEL 
- * 
- * @package RyuJin-FrameWork
- * @version 1.
- * @author ryujinsoft.
- * 
- */
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

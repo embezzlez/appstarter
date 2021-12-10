@@ -1,10 +1,4 @@
 <?php
-/**
- * @package RyuJin Framework
- * @version 3.0
- * @author ryujinsoft
- * 
- * **/
 
 class Init
 {
@@ -41,7 +35,7 @@ class Init
       $this->htaccess();
       $PARAM = $this->config()['parameter'];
       @unlink($this->basedir.'/index.php');
-      echo "<META HTTP-EQUIV='REFRESH' CONTENT='1;URL=/?{$param}' />";
+      echo "<META HTTP-EQUIV='REFRESH' CONTENT='1;URL=/?{$PARAM}' />";
 
       return ;
    }
