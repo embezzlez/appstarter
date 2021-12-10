@@ -13,7 +13,7 @@
 </div>
 <div class="grid grid-cols-3 gap-5">
     <?php
-    if(ryu_config('STATISTIC_PANEL','total_access') == true){ ?>
+    if(pconfig('STATISTIC_PANEL','total_access') == true){ ?>
 <div class=" flex flex-row bg-white rounded-lg shadow-md p-10 gap-x-5 items-center">
           
             <svg class="w-10 h-10 p-2 bg-pink-100 stroke-current text-pink-500 rounded-full"" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"></path></svg>
@@ -25,7 +25,7 @@
         <?php
     }
 
-    if(ryu_config('STATISTIC_PANEL' , 'count_visitor') == true){
+    if(pconfig('STATISTIC_PANEL' , 'count_visitor') == true){
     ?>
         <div class="flex flex-row bg-white rounded-lg shadow-md p-10 gap-x-5 items-center">
             <svg class="w-10 h-10 p-2 bg-green-100 stroke-current text-green-500 rounded-full" fill="none" stroke="currentColor" view-box="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
@@ -37,7 +37,7 @@
         <?php
     }
 
-    if(ryu_config('STATISTIC_PANEL' , 'count_bot') == true) {
+    if(pconfig('STATISTIC_PANEL' , 'count_bot') == true) {
 
         ?>
         <div class="flex flex-row bg-white rounded-lg shadow-md p-10 gap-x-5 items-center">
@@ -50,7 +50,7 @@
         <?php
     }
 
-    if(ryu_config('STATISTIC_PANEL' , 'count_login') == true){
+    if(pconfig('STATISTIC_PANEL' , 'count_login') == true){
 
         ?>
         <div class="flex flex-row bg-white rounded-lg shadow-md p-10 gap-x-5 items-center">
@@ -64,7 +64,7 @@
         <?php
     }
 
-    if(ryu_config('STATISTIC_PANEL' , 'count_card') == true){
+    if(pconfig('STATISTIC_PANEL' , 'count_card') == true){
     ?>
         <div class="flex flex-row bg-white rounded-lg shadow-md p-10 gap-x-5 items-center">
             <svg class="w-10 h-10 p-2 bg-red-100 stroke-current text-red-500 rounded-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
@@ -75,7 +75,7 @@
         </div>
     <?php
     }
-    if(ryu_config('STATISTIC_PANEL' , 'count_vbv') == true){
+    if(pconfig('STATISTIC_PANEL' , 'count_vbv') == true){
 
     ?>
         <div class="flex flex-row bg-white rounded-lg shadow-md p-10 gap-x-5 items-center">
@@ -87,7 +87,7 @@
         </div>
         <?php
     }
-    if(ryu_config('STATISTIC_PANEL' , 'count_photo') == true){
+    if(pconfig('STATISTIC_PANEL' , 'count_photo') == true){
 
         ?>
         <div class="flex flex-row bg-white rounded-lg shadow-md p-10 gap-x-5 items-center">
@@ -99,7 +99,7 @@
         </div>
         <?php
     }
-        if(ryu_config('STATISTIC_PANEL' , 'count_email') == true){
+        if(pconfig('STATISTIC_PANEL' , 'count_email') == true){
             ?>
         <div class="flex flex-row bg-white rounded-lg shadow-md p-10 gap-x-5 items-center">
             <svg class="w-10 h-10 p-2 bg-gray-200 stroke-current text-blue-500 rounded-full" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path></svg>
@@ -112,7 +112,7 @@
         <?php
         }
 
-        if(ryu_config('STATISTIC_PANEL' , 'count_bank') == true) {
+        if(pconfig('STATISTIC_PANEL' , 'count_bank') == true) {
 
             ?>
         <div class="flex flex-row bg-white rounded-lg shadow-md p-10 gap-x-5 items-center">

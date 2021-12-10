@@ -45,10 +45,10 @@ function get_config()
     }
 }
 
-function ryu_config($main,$sub)
+function pconfig($main,$sub)
 {
 
-    return RYU_CONFIG[''.$main.''][''.$sub.''];
+    return PCONFIG[''.$main.''][''.$sub.''];
 }
 
 function save_config($data = [])

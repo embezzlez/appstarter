@@ -9,8 +9,8 @@ define('PUBLIC_PATH' , dirname(__DIR__));
 define('XAPP_PATH', dirname(dirname(__DIR__)) .'/app/');
 
 require RP_INC_PATH  . 'func.php';
-require 'ryu-config.php';
-define('RYU_CONFIG',$ryu_config);
+require 'config.php';
+define('PCONFIG',$config);
 
 if(!file_exists(RP_ROOT . '/.ryupanel_key'))
 {
@@ -24,7 +24,7 @@ if(empty($_SESSION['ryupanel_login']))
     require RP_INC_PATH.'signin.php';
     }else{
          
-            $private_key = RYU_CONFIG['PRIVATE_KEY'];
+            $private_key = PCONFIG['PRIVATE_KEY'];
 
         if(isset($_POST['private_key']))
         {
