@@ -14,7 +14,7 @@ use Symfony\Component\Console\Input\ArrayInput;
 class Build extends Command
 {
     // the name of the command (the part after "bin/console")
-    protected static $defaultName = 'ryu:build';
+    protected static $defaultName = 'build';
     protected static $defaultDescription = 'Build framework to zip file';
     protected function configure(): void
     {

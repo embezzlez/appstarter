@@ -10,7 +10,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 class Init extends Command
 {
     // the name of the command (the part after "bin/console")
-    protected static $defaultName = 'ryu:init';
+    protected static $defaultName = 'init';
     protected static $defaultDescription = 'Generate request and page files';
     protected function configure(): void
     {

@@ -10,7 +10,7 @@ use Symfony\Component\Console\Input\InputOption;
 class Server extends Command
 {
     // the name of the command (the part after "bin/console")
-    protected static $defaultName = 'ryu:run';
+    protected static $defaultName = 'run';
     protected static $defaultDescription = 'Run local php-server development mode';
     protected function configure(): void
     {
