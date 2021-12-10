@@ -12,7 +12,7 @@ require RP_INC_PATH  . 'func.php';
 require 'config.php';
 define('PCONFIG',$config);
 
-if(!file_exists(RP_ROOT . '/.ryupanel_key'))
+if(!file_exists(RP_ROOT . '/.access_key'))
 {
     require RP_INC_PATH . 'set_key.php';
     exit;

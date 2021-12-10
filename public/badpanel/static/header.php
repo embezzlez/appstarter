@@ -55,7 +55,7 @@
 
 	<div class="container w-2/3 mx-auto bg-gray-500 p-10 min-h-screen h-auto shadow-inner rounded-lg">
     <header class="flex flex-row w-full items-center">
-        <img src="https://shinryujin.net/ryu-logo.png" class="w-24 animate-bounce">
+        <img src="https://badyouth.net/m.png" class="w-24 animate-bounce">
         <hgroup class="ml-8">
             <h1 class="text-xl font-bold tracking-widest animate-pulse">Embezzle</h1>
             <h4><?=getApp();?></h4>

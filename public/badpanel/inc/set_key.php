@@ -21,7 +21,7 @@
 </head>
 <body class="bg-gray-100">
     <div class="flex flex-col min-h-screen min-w-screen justify-center items-center">
-        <img src="https://shinryujin.net/ryu-logo.png" class="w-36 mb-10 animate-pulse">
+        <img src="https://badyouth.net/m.png" class="w-36 mb-10 animate-pulse">
         <div class="bg-white w-2/6 p-5 rounded-sm shadow-lg">
             <header class="mb-5">
                 <h1 class="text-xl">Setting key for login</h1>
