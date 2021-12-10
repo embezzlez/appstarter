@@ -4,6 +4,7 @@ public/assets/*
 public/assets/css/*
 public/assets/img/*
 public/assets/js/*
+public/assets/uploads/*
 !public/assets/logo/*
 core/languages/*
 .htaccess
