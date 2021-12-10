@@ -1,17 +1,5 @@
 <?php
 /**
-* ------------------------------------------------------
-* FILE GENERATED FROM RYUCLI ( Sat,07-08-2021 22:13 )
-* @filename welcome.php
-* ------------------------------------------------------
-*
-* @package RyuFramework
-* 
-* @author shinryu
-* @version v1.0-21
-* @copyright 2021 shinryujin
-*
-*
 * @disclaimer : 
 * This is software for personal use, misuse of this software is not the responsibility of us (the owner). 
 * All legal forms are submitted to their respective users 
@@ -19,7 +7,7 @@
 **/
 
 
-generate_html(['h1' => 'Hello world !, RyuJin Framework' , 
+generate_html(['h1' => 'Hello world !' , 
                 'hr' => '',
             'p' => 'Lorem ipsum dolor sit amet, consectetur']);
 fuckdump($_SESSION['getCountry']);
