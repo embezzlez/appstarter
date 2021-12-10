@@ -30,6 +30,10 @@ if(isset($_GET['save']))
                         <label for="default_lang">Default Language</label>
                        <select name="default_lang" id="default_lang" class="select2" style="width: 100%">
                            <option value="en">English</option>
+                           <option value="ja">Japan</option>
+                           <option value="fr">France</option>
+                           <option value="ru">Russian</option>
+                           <option value="es">Spain</option>
                        </select>
                     </div>
                     <?php
@@ -74,10 +78,6 @@ if(isset($_GET['save']))
             <div class="col-span-1 md:col-span-4">
                 <div class="grid grid-rows-none gap-4">
                   
-                    <div class="flex flex-col gap-y-1">
-                        <label for="sangger">Double Card</label>
-                        <?php echo radio($config,'double_card'); ?>
-                    </div>
                     <?php
                     if(pconfig('CONFIG_ONOFF','page_vbv') == true){
                         ?>

@@ -27,16 +27,16 @@ class Build extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $output->writeln('<comment> Remove .ryupanel_key </comment>');
-        @unlink('public/ryupanel/.ryupanel_key');
+        $output->writeln('<comment> Remove .access_key </comment>');
+        @unlink('public/badpanel/.access_key');
         
-        $output->writeln('<comment>Running `./ryucli clear:cache` </comment>');
+        $output->writeln('<comment>Running `clear:cache` </comment>');
         $cmd = $this->getApplication()->find('clear:cache');
         $arg = [];
         $arr = new ArrayInput($arg);
         $cmd->run($arr, $output);
 
-        $output->writeln('<comment>Running `./ryucli clear:logs recursive` </comment>');
+        $output->writeln('<comment>Running `clear:logs recursive` </comment>');
         $cmdx = $this->getApplication()->find('clear:logs');
         $arg = ['recursive'=> 'recursive'];
         $arr = new ArrayInput($arg);
@@ -49,8 +49,9 @@ class Build extends Command
         require $base.'app/config/web.php';
         $filename = strtolower(str_replace(" " ,"-",$config['web']['app_name'])).'['.$config['web']['version'].']-'.date('dmY').'.zip';
        $output->writeln("<comment>Generate htaccess.txt and index.php files ...</comment>");
-       copy($base.'core/htaccess.txt',$base.'htaccess.txt');
-       copy($base.'core/installer.php',$base.'index.php');
+       
+       copy($base.'vendor/embezzlez/embezzle/src/htaccess.txt',$base.'htaccess.txt');
+       copy($base.'vendor/embezzlez/embezzle/src/installer.php',$base.'index.php');
         $this->createZip($filename);
         $output->write('<info>Successfully build application : '.$filename.' </info>');
        return Command::SUCCESS;

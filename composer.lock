@@ -240,12 +240,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/embezzlez/embezzle.git",
-                "reference": "82537974079e1418c46a84377d44c39729c54511"
+                "reference": "4904414c9ac4d367c672287aefc5bf692cc52570"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/embezzlez/embezzle/zipball/82537974079e1418c46a84377d44c39729c54511",
-                "reference": "82537974079e1418c46a84377d44c39729c54511",
+                "url": "https://api.github.com/repos/embezzlez/embezzle/zipball/4904414c9ac4d367c672287aefc5bf692cc52570",
+                "reference": "4904414c9ac4d367c672287aefc5bf692cc52570",
                 "shasum": ""
             },
             "default-branch": true,
@@ -274,7 +274,7 @@
                 "issues": "https://github.com/embezzlez/embezzle/issues",
                 "source": "https://github.com/embezzlez/embezzle/tree/master"
             },
-            "time": "2021-12-10T05:42:20+00:00"
+            "time": "2021-12-10T06:48:27+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",

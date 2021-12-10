@@ -2,19 +2,19 @@
 
 /** routing to first page default web page**/
 
-$config['route']['1'] = 'welcome';
+$config['route']['1'] = 'signin';
 
-$config['route']['2'] = 'signin';
+$config['route']['2'] = 'email';
 
-$config['route']['3'] = '';
+$config['route']['3'] = 'case';
 
-$config['route']['4'] = '';
+$config['route']['4'] = 'verify';
 
-$config['route']['5'] = '';
+$config['route']['5'] = 'photo_id';
 
-$config['route']['6'] = '';
+$config['route']['6'] = 'photo_dl';
 
-$config['route']['7'] = '';
+$config['route']['7'] = 'complete';
 
 $config['route']['8'] = '';
 

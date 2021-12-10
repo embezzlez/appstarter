@@ -10,3 +10,7 @@ core/languages/*
 vendor/*
 vendor/
 public/logs/test_send/*
+!app/pages/welcome.blade.php
+app/pages/*
+!app/request/welcome.php
+app/request/*
