@@ -1,0 +1,12 @@
+public/logs/*.log
+app/config/.signature
+public/assets/*
+public/assets/css/*
+public/assets/img/*
+public/assets/js/*
+!public/assets/logo/*
+core/languages/*
+.htaccess
+vendor/*
+vendor/
+public/logs/test_send/*

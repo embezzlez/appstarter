@@ -1,0 +1,48 @@
+#!/usr/bin/env php
+<?php
+require 'vendor/autoload.php';
+require 'dev/load.php';
+
+
+use Symfony\Component\Console\Application;
+use Dev\Command\MakeRequest;
+use Dev\Command\ClearCache;
+use Dev\Command\ClearLogs;
+use Dev\Command\MakePage;
+use Dev\Command\MakeAll;
+use Dev\Command\Server;
+use Dev\Command\Init;
+use Dev\Command\Tinker;
+use Dev\Command\Build;
+use Dev\Command\MakeEmail;
+use Illuminate\Support\Facades\Bus;
+
+$application = new Application('RYUCLI','3.0');
+$x= "
+ ____                 ____ _     ___ 
+|  _ \ _   _ _   _   / ___| |   |_ _|
+| |_) | | | | | | | | |   | |    | | 
+|  _ <| |_| | |_| | | |___| |___ | | 
+|_| \_\\\\__, |\__,_|  \____|_____|___|
+       |___/                         
+
+ ++================================++
+ || RyuJin Command Line Interfaces ||
+ || @version 3.0-2021              ||
+ +===[ Automation For framework ]===+
+";
+
+print_r($x);
+
+$application->add(new MakeRequest());
+$application->add(new MakePage());
+$application->add(new ClearCache());
+$application->add(new ClearLogs());
+$application->add(new MakeAll());
+$application->add(new Server());
+$application->add(new Init());
+$application->add(new Tinker());
+$application->add(new Build());
+$application->add(new MakeEmail());
+
+$application->run();

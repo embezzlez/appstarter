@@ -1,0 +1,16 @@
+{
+    "name": "embezzle/appstarter",
+    "description": "The Embezzle App Starter",
+    "type": "project",
+    "require": {
+        "jenssegers/blade": "^1.4",
+        "stichoza/google-translate-php": "^4.1",
+        "jaybizzle/crawler-detect": "^1.2",
+        "alchemy/zippy": "^1.0",
+        "embezzlez/embezzle": "dev-master"
+    },
+    "license": "MIT",
+    "require-dev": {
+        "symfony/console": "^5.3"
+    }
+}
