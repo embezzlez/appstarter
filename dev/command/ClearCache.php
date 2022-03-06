@@ -1,4 +1,5 @@
 <?php
+
 namespace Dev\Command;
 
 use Illuminate\Filesystem\Filesystem;
@@ -25,19 +26,23 @@ class ClearCache extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-       
+
         $output->writeln('<comment>Clearing cache ... </comment>');
         $CACHEPATH = 'app/cache/';
-        foreach(scandir($CACHEPATH) as $cf)
-        {
-            if($cf == '.' || $cf == '..')continue;
-            $output->writeln('<comment>CLEAR : '.$cf);
+        foreach (scandir($CACHEPATH) as $cf) {
+            if ($cf == '.' || $cf == '..') continue;
+            $output->writeln('<comment>CLEAR : ' . $cf . '</comment>');
             @unlink($CACHEPATH . $cf);
+        }
+        $PAGESCACHE = 'public/_pages/';
+        foreach (scandir($PAGESCACHE) as $pg) {
+            if ($pg == '.' || $pg == '..') continue;
+            $output->writeln('<comment>CLEAR : ' . $pg . '</comment>');
+            @unlink($PAGESCACHE . $pg);
         }
         $output->writeln('<info>Successfully clear cache</info>');
 
 
-       return Command::SUCCESS;
+        return Command::SUCCESS;
     }
-   
 }

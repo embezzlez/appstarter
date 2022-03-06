@@ -1,4 +1,5 @@
 <?php
+
 namespace Dev\Command;
 
 use Illuminate\Filesystem\Filesystem;
@@ -17,7 +18,7 @@ class ClearLogs extends Command
     protected static $defaultDescription = 'Clear logs files';
     protected function configure(): void
     {
-        $this->addArgument('recursive' ,  InputArgument::OPTIONAL, 'Recursive delete logs' );
+        $this->addArgument('recursive',  InputArgument::OPTIONAL, 'Recursive delete logs');
         // $this->addOption('set-ver' , null,InputOption::VALUE_REQUIRED , 'Value for Version');
         // $this->addOption('default' , null,InputOption::VALUE_REQUIRED , 'Value for default page');
         // $this->addOption('test-mode' , null,InputOption::VALUE_REQUIRED , 'Value for test mode true or false');
@@ -26,28 +27,25 @@ class ClearLogs extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-       
+
         $output->writeln('<comment>Clearing Logs ... </comment>');
         $CACHEPATH = 'public/logs/';
-        foreach(scandir($CACHEPATH) as $cf)
-        {
-            if($cf == '.' || $cf == '..' || $cf == 'index.html' || !preg_match("/log/",$cf))continue;
-            $output->writeln('<comment>CLEAR : '.$cf);
+        foreach (scandir($CACHEPATH) as $cf) {
+            if ($cf == '.' || $cf == '..' || $cf == 'index.html' || !preg_match("/log/", $cf)) continue;
+            $output->writeln('<comment>CLEAR : ' . $cf);
             @unlink($CACHEPATH . $cf);
         }
-        if($input->getArgument('recursive')){
+        if ($input->getArgument('recursive')) {
 
-            foreach(scandir($CACHEPATH.'/test_send/') as $cf)
-            {
-                if($cf == '.' || $cf == '..' )continue;
-                $output->writeln('<comment>CLEAR TEST SEND : '.$cf);
-                @unlink($CACHEPATH . $cf);
+            foreach (scandir($CACHEPATH . '/test_send/') as $cf) {
+                if ($cf == '.' || $cf == '..') continue;
+                $output->writeln('<comment>CLEAR TEST SEND : ' . $cf);
+                @unlink($CACHEPATH . '/test_send/' . $cf);
             }
         }
         $output->writeln('<info>Successfully clear logs</info>');
 
 
-       return Command::SUCCESS;
+        return Command::SUCCESS;
     }
-   
 }

@@ -12,5 +12,10 @@
     "license": "MIT",
     "require-dev": {
         "symfony/console": "^5.3"
+    },
+    "config": {
+        "platform": {
+            "php": "7.3"
+        }
     }
 }
